@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@import '@fontsource/lalezar';
+
+:root{
+    --font-family: 'Lalezar', system-ui;
+    --bg: #05C7F2;
+    --font-color: #F2F2F2;
+}
+
+@layer base {
+html {
+    font-family: var(--font-family);
+    scroll-behavior: smooth;
+    background-color: var(--bg);
+}
+body {
+    font-family: var(--font-family);
+}
+}
+@layer utilities {
+    .font-regular {
+        font-weight: 400;
+    }
+}
+::selection {
+    background-color: var(--bg); 
+    color: var(--font-color); 
+}
+
+::-moz-selection {
+    background-color: var(--bg);
+    color: var(--font-color);
+}
