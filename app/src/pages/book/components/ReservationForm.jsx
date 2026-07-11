@@ -27,12 +27,13 @@ const ReservationSection = () => {
   return (
     <div className="isolate bg-[#262223] px-6 py-24 sm:py-32 lg:px-8">
       {/* Heading & subheading */}
-      <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-4xl uppercase text-balance text-[#05C7F2] sm:text-5xl">
-          Contact
+      <div className="mx-auto  max-w-2xl text-center flex flex-col items-center justify-center gap-3">
+        <p className="text-lg text-[#05C7F2]">BOOKING</p>
+        <h2 className="text-3xl uppercase text-balance text-[#f2f2f2] sm:text-5xl">
+          Book Your Surf Experience
         </h2>
-        <p className="mt-2 text-lg/8 text-[#f2f2f2]">
-          Contact us with your enquiries and we can help you book
+        <p className="text-lg/8 text-balance text-[#f2f2f2]">
+          Choose your plan
         </p>
       </div>
 
@@ -46,7 +47,7 @@ const ReservationSection = () => {
           {/* // * First Name */}
           <div>
             <label htmlFor="firstName" className="block text-sm/6  text-[#F2F2F2]">
-              First name
+              First Name
             </label>
             <div className="mt-2.5">
               <input
@@ -68,7 +69,7 @@ const ReservationSection = () => {
           {/* // * Last Name */}
           <div>
             <label htmlFor="lastName" className="block text-sm/6  text-[#F2F2F2]">
-              Last name
+              Last Name
             </label>
             <div className="mt-2.5">
               <input
@@ -118,7 +119,7 @@ const ReservationSection = () => {
           {/* // * Phone number – with country dropdown */}
           <div className="sm:col-span-2">
             <label htmlFor="phone" className="block text-sm/6  text-[#F2F2F2]">
-              Phone number
+              Phone Number
             </label>
             <div className="mt-2.5">
               <div className="flex  bg-white/5 outline-1 -outline-offset-1 outline-white has-[input:focus-within]:outline-2 has-[input:focus-within]:-outline-offset-2 has-[input:focus-within]:outline-[#05C7F2]">
@@ -253,7 +254,7 @@ const ReservationSection = () => {
           <button
             type="submit"
             disabled={isLoading}
-            className="block w-full cursor-pointer  bg-[#05C7F2] px-3.5 py-2.5 text-center text-sm  text-[#F2F2F2] hover:bg-[#05c7f2c5] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#05C7F2] disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            className="block w-full cursor-pointer  bg-[#05C7F2] px-3.5 py-2.5 text-center text-sm  text-[#F2F2F2] hover:bg-[#f2f2f2] hover:text-[#05C7F2] hover:rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#05C7F2] disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
           >
             {isLoading ? 'Submitting...' : 'Book Now'}
           </button>
